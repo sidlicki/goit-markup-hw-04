@@ -49,14 +49,9 @@ body {
 
 .container {
   width: 1158px;
-  /* margin-top: 0px; */
-  /* margin-bottom: 0px; */
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
-  /* padding-left: 15px;
-  padding-right: 15px; */
-  /* background-color: aqua; */
 }
 
 .visually-hidden {
@@ -126,7 +121,6 @@ body {
 }
 
 .page-header {
-  /* display: flex; */
   align-items: center;
   border-bottom: 1px solid #e7e9fc;
 }
@@ -146,11 +140,6 @@ body {
   display: flex;
   gap: 40px;
 }
-.menu-item {
-  /* display: block; */
-  /* padding-top: 24px; */
-  /* padding-bottom: 24px; */
-}
 
 .contacts-list {
   display: flex;
@@ -165,7 +154,6 @@ body {
 .main-section {
   padding-top: 188px;
   padding-bottom: 188px;
-  /* display: flex; */
   text-align: center;
   background-color: var(--header-color);
 }
@@ -212,7 +200,6 @@ body {
 /* OTHER SECTIONS sidlicki */
 /* /////////////////////////////////////// */
 .section-two {
-  /* display: flex; */
   padding-top: 120px;
   padding-bottom: 120px;
 }
