@@ -8,6 +8,12 @@
   --background-color-button-portfolio: #f4f4fd;
 }
 
+body {
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .list {
   list-style: none;
 }
@@ -156,6 +162,11 @@ body {
   padding-bottom: 188px;
   text-align: center;
   background-color: var(--header-color);
+  /*  */
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/bg.jpg);
+  background-size: cover;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .main-title {
