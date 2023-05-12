@@ -8,12 +8,6 @@
   --background-color-button-portfolio: #f4f4fd;
 }
 
-body {
-  width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .list {
   list-style: none;
 }
@@ -51,6 +45,9 @@ body {
   font-family: var(--main-font-family);
   color: #434455;
   background-color: var(--background-color);
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container {
@@ -129,6 +126,9 @@ body {
 .page-header {
   align-items: center;
   border-bottom: 1px solid #e7e9fc;
+
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -167,6 +167,9 @@ body {
     url(../images/bg.jpg);
   background-size: cover;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .main-title {
@@ -224,7 +227,7 @@ body {
   width: calc((100% - 72px) / 4);
 }
 
-.container-for-icons-in-section2 {
+.container-for-icons-in-section-two {
   display: flex;
   height: 112px;
   background: #f4f4fd;
@@ -264,7 +267,7 @@ body {
 .section-title {
   margin-bottom: 72px;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -293,14 +296,15 @@ body {
 .container-for-podpis {
   padding-top: 32px;
   padding-bottom: 32px;
-  padding-left: 16px;
-  padding-right: 16px;
+  /* padding-left: 16px; */
+  /* padding-right: 16px; */
 }
 
 .social-icons-list {
   display: flex;
   margin-top: 8px;
-  column-gap: 24px;
+  gap: 24px;
+  justify-content: center;
 }
 
 .social-list-link {
@@ -325,8 +329,8 @@ body {
 /* /////////////////////////////// */
 
 .section-customers {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .customers-list {
@@ -336,15 +340,34 @@ body {
 }
 
 .customers-list-item {
-  display: flex;
   height: 88px;
   width: calc((100% - 5 * 24px) / 6);
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  justify-content: center;
-  align-items: center;
 }
 
+.customers-list-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  display: flex;
+  color: #8e8f99;
+  align-items: center;
+  justify-content: center;
+}
+
+.customers-icon {
+  fill: currentColor;
+}
+
+.customers-list-link:hover,
+.customers-list-link:focus {
+  border-color: #404bbf;
+}
+
+.customers-list-link:hover .customers-icon,
+.customers-list-link:focus .customers-icon {
+  fill: #404bbf;
+}
 /* /////////////////////////////////////// */
 /* FOOTER sidlicki */
 /* /////////////////////////////////////// */
@@ -357,6 +380,11 @@ body {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
+}
+
+.logo-and-description-footer {
+  margin-right: 120px;
 }
 
 .logo-in-footer {
@@ -386,15 +414,12 @@ body {
   color: #f4f4fd;
 }
 
-.footer-social-container {
-  margin-left: 120px;
-}
 .footer-social-title {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
@@ -434,6 +459,8 @@ body {
   padding-bottom: 120px;
 }
 .button-portfolio {
+  display: block;
+
   border: 1px solid #e7e9fc;
   padding-top: 12px;
   padding-bottom: 12px;
