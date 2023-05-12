@@ -362,12 +362,9 @@ body {
 .customers-list-link:hover,
 .customers-list-link:focus {
   border-color: #404bbf;
+  color: #404bbf;
 }
 
-.customers-list-link:hover .customers-icon,
-.customers-list-link:focus .customers-icon {
-  fill: #404bbf;
-}
 /* /////////////////////////////////////// */
 /* FOOTER sidlicki */
 /* /////////////////////////////////////// */
@@ -509,12 +506,13 @@ body {
   width: calc((100% - 48px) / 3);
 }
 
-.porfolio-link {
+.portfolio-link {
   display: block;
+  /* background-color: #4d5ae5; */
 }
 
-.portoflio-link:hover .container-for-podpis-portfolio,
-.portoflio-link:focus .container-for-podpis-portfolio {
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
